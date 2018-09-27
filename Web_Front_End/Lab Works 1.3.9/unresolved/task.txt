@@ -1,0 +1,15 @@
+Create a page according to mock-up.
+
+Requirements: 
+
+Header:
+1. Header should be done using flex.
+2. Sign In button should be pulled right. Use margin-left: auto.
+
+Events:
+1.Date and price should be fixed - 200px. Description should take the rest of the space. Use flex property for it.
+
+Jobs
+1. Title columns should be fixed - 200px. 
+2. Title and description should have margin - 15px.
+3. Apply button should be pulled down. Create a flexbox from description element to make it.

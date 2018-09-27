@@ -1,0 +1,33 @@
+.header {
+  padding: 15px;
+  background-color: darkturquoise;
+}
+.header-item {
+  display: inline-block;
+  padding: 15px;
+  background-color: darkviolet;
+  color: white;
+  font-family: sans-serif;
+  margin-right: 20px;
+}
+.sidebar {
+  width: 400px;
+  display: inline-block;
+  margin-top: 40px;
+  background-color: bisque;
+  padding: 20px;
+}
+.subscription-button {
+  width: 45%;
+  color: white;
+  float: left;
+  background-color: burlywood;
+  border: solid 1px brown;
+  margin-right: 5%;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.clear {
+  clear: both;
+}

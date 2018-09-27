@@ -1,0 +1,15 @@
+Create a page which will have next items:
+
+1. Title of the city you would like to visit - use <h1> tag;
+
+2. Description of that city - use <p> tag;
+
+3. Highlight important words in the description using <b> tag;
+
+4. Unordered list of other cities you would like to use - use <ul>;
+
+5. Add image of the city - use <img> tag and src attribute;
+
+6. Add <iframe> of the city from wiki page - use <iframe> tag and src, width, height attributes;
+
+7. Add <title>;

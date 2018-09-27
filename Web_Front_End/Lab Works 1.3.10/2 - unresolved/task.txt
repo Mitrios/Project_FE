@@ -1,0 +1,4 @@
+Change css rules according to BEM methodologe. 
+1. Each content component and header are independent blocks.
+2. Consider that button styles in sidebar may be changed by designer any time. Change of their styles should not influence header at all.
+3. Find at least one situation where BEM is better then OOCSS, and opposite.

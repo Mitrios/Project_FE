@@ -1,0 +1,13 @@
+Create a page of newspaper like on the mock up.
+
+Requirements: 
+
+1. Use a background-image property to place background on the <body> element.
+2. You will need to use background position to set the top of the map to the top of the page.
+3. Header styles are next: distance betwwen letters - 4px, font - sans-serif, aling - center, weight - bold.
+4. Subheader styles are next: distance betwwen letters - 2px, font - cursive, aling - center, font-style - italic, weight - normal.
+5. List of links. All links should lead to google page with relevant query. Example: href="https://www.google.com.ua/?q=america"
+6. Link should be opened in a new tab.
+7. Link should has blue color, and once visited - darkgrey.
+8. Article: color - darkslategrey, indent of first line -20px.
+

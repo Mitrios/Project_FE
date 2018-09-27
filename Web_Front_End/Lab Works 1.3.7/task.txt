@@ -1,0 +1,5 @@
+Create a page according to a mock-up.
+
+Requirements: 
+
+You need to create a <div> element -container, and 4 <div> elements inside - columns. The task is to paint them in grey/darkgrey colors one by one. The problem is that they should be all 100% height. Setting 100% to height property - won't work. One of the decisions is to use gradients - see example here - http://codepen.io/mariemosley/pen/01f15f7a2dfcff438d17cd77c298b710

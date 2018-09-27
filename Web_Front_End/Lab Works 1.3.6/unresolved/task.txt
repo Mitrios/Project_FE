@@ -1,0 +1,24 @@
+Create a page according to a mock-up.
+
+Requirements: 
+
+You should not use top, left, bottom or right properties in this task. As well position property should not be changed. All elements should have position property set to static (default value).
+
+Header:
+1. Distance between button and header edge should be 15px.
+2. Distance between button text and button edge should be 15px.
+3. Distance between buttons should be 20px;
+4. Buttons should be displayed in a row, not in a column. Hint: use display property.
+
+Sidebar:
+
+1. Distance between endge of the sidebar and button should be 15px.
+2. Distance between sidebar and header - 40px.
+3. Width of one button should be 45% of the sidebar width.
+4. Margin to the right of each button should be 5% of sidebar width.
+5. Setting width to 45% will not do the task. Buttons will be bigger then 45%, because they have padding. Use box-sizing property to fix this issue.
+5. Buttons should be displayed in line, not in column. 
+Hint: there are two ways to put buttons in line:
+  - using display property (Requires a hack: think of two buttons as of two words with width 45% + 5% margin, which takes 100% of container and(!) a space between them! how to make this space have 0 width?)
+  - using float property (requires preventing collapsing of parent height - use clear property).
+  

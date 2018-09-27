@@ -1,0 +1,11 @@
+Create a page with animation os sun and mars according to gif.
+
+Requirements: 
+
+1. Use space image as backgound image for body.
+2. Create a Sun using <div> and border-radius broperty.
+3. Create a Mars orbit using <div> and border proerty.
+4. Put inside orbit another <div>. Style it as Mars.
+5. Create animation of spinning orbit using @keyframes rule. Set the speed of animation to 6 s and style to linear.
+6. When hovering orbit - animation should be paused.
+7. When hovering on Sun and Mars they should scale to 1.2 of their original size. Scaling should be happingin during 500ms.
