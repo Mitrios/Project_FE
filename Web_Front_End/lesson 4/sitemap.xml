@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns"http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
+	<url>			
 		<loc>https://tviybruht.wixsite.com/bruht</loc>
 		<lastmod>2018-09-27T19:40:10+2</lastmod>
 		<changefreq>Weekly</changefreq>
@@ -12,7 +12,7 @@
 		<lastmod>2018-09-27T19:40:10+2</lastmod>
 		<changefreq>Weekly</changefreq>
 		<!--always, hourly, daily, weekly, monthly, yearly, never-->
-		<priority>1</priority>
+		<priority>0.9</priority>
 	</url>
 	<url>
 		<loc>https://tviybruht.wixsite.com/bruht/magazin-1</loc>
@@ -26,7 +26,7 @@
 		<lastmod>2018-09-27T19:40:10+2</lastmod>
 		<changefreq>Weekly</changefreq>
 		<!--always, hourly, daily, weekly, monthly, yearly, never-->
-		<priority>1</priority>
+		<priority>0.8</priority>
 	</url>
 	<url><loc>https://tviybruht.wixsite.com/bruht/zv-yazhis-z-nami-1</loc>
 		<lastmod>2018-09-27T19:40:10+2</lastmod>

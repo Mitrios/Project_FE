@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.newblock{font-size: 23px;
+}
+
+body{background-color: beige;
+}
+
+.image1{
+	background-image: url(../image/logo.png);
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-attachment: fixed;
+}
+
+.color{
+	background-image: url(../image/logo.png);
+	background-size: cover;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-attachment: scroll;
+}

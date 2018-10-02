@@ -5,8 +5,53 @@
 <title>HookahPlace Prague</title>
 	<meta name="Description" content="Tasty hookah and amazing cocktails in the heart of Prague" />
 	<meta name="Keywords" content="hookah, cocktails, Prague" />
+<link href="../lesson 5_CSS/css_style.css" rel="stylesheet">
 </head>
-
+<!--/*meta, form, css*/-->
+	<style>
+		p,h1{font-size: 28px;
+		}
+		legend{font-size: 24px;
+		}
+		.block-div{
+			color: #70BAFF;
+			background-color: #B5B5B5;
+		}
+		#indificator{
+			font-size: 40px;
+			color: blue;
+		}
+		</style>
 <body>
-</body>
+	<h1 style="color: #EC090D; border: thin">Reach us through our website</h1>
+	<form id="form1" class="form" name="form1" action="contact.php" method="post">
+		<fieldset>
+			<legend>Contact form:</legend>
+		<input type="text" class="input" id="name" name="name" placeholder="Type your name" required /><br/>
+			<select name="Genger">
+				<option value="Male" selected>Male</option>
+				<option value="Female">Female</option>
+				<option value="Other">Other</option>
+			</select><br/>
+		<input type="tel" class="input" id="Phone" name="Phone" placeholder="Type your phone number" required /><br/>
+		<input type="textarea" class="textarea" id="textarea" name="textarea" placeholder="Type your message" rows="10" cols="100"/><br/>
+		<button class="button" id="button" onclick="alert('We received your message and contact you as soon as possible')">Send</button>
+		</fieldset>
+	</form>
+	<p><i>*Please, keep in mind that we do not share sensitive information with any of parties</i></p>
+	<div class="block-div">1234 Lorem Ipsum Lorem Ipsum</div>
+	<div class="block-div">1234 Lorem Ipsum Lorem Ipsum</div>
+	<div class="block-div">1234 Lorem Ipsum Lorem Ipsum</div>
+	
+	<div id="indificator">1234 Lorem Ipsum Lorem Ipsum</div>
+	<div class="newblock">1234 Lorem Ipsum Lorem Ipsum</div>
+	
+	
+	<br>
+	<div class="container">
+		<div class="color">Simple color</div>
+		<div class="image1"></div>
+	
+	</div>
+	</body>
 </html>
