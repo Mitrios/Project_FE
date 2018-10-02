@@ -6,11 +6,19 @@
 </head>
 
 <body>
-	<form id="form1" class="form" name="form1" action="contact" method="post">
+	<form id="form1" class="form" name="form1" action="contact.php" method="post">
+		<fieldset>
+			<legend>Contact form:</legend>
 		<input type="text" class="input" id="name" name="name" placeholder="Type your name" required /><br/>
-		<input type="tel" class="input" id="Pnone" name="Phone" placeholder="Type your phone number" required /><br/>
-		<input type="textarea" class="textarea" id="textarea" name="textarea" placeholder="Type your message" /><br/>
-		<button class="button" id="button">Send</button>
+			<select name="Genger">
+				<option value="Male" selected>Male</option>
+				<option value="Female">Female</option>
+				<option value="Other">Other</option>
+			</select><br/>
+		<input type="tel" class="input" id="Phone" name="Phone" placeholder="Type your phone number" required /><br/>
+		<input type="textarea" class="textarea" id="textarea" name="textarea" placeholder="Type your message" rows="10" cols="100"/><br/>
+		<button class="button" id="button" onclick="alert('We received your message and contact you as soon as possible')">Send</button>
+		</fieldset>
 	</form>
 </body>
 </html>
