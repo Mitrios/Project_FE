@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+.header, .footer{
+	height: 60px;
+	width: relative;
+	background-color: lightblue;
+	padding-top: 35px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 5px;
+}
+
+.header{
+	text-align: right;
+}
+
+.section{
+	border: 3px solid blue;
+	margin: 5px;
+	padding: 10px;
+}
+
+button {
+	display: inline-block;
+	cursor: pointer;
+	padding: 10px 2px;
+	background-color:#8791FF;
+}
+
+p button {
+	background-color: brown;
+	font-size: 12px;
+	color: white;
+}
+
+br ~ button {
+	background-color: white;
+	display: block;
+}
+
+p {
+	background-color: #FFDFAC;
+	padding-left: 5px;
+}
