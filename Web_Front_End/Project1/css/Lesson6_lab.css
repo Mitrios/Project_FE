@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+.block{
+	height: 200px;
+	width: 200px;
+	padding: 25px 30px;
+	background-color: cadetblue;
+}
+
+.block1{
+	height: 30px;
+	width: 600px;
+	background-color: cadetblue;
+	margin: 0 auto;
+}

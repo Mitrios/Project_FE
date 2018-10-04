@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+h1{
+	font-family: 'montserratlight';
+}
+
+h2{
+	font-family: 'ralewaysemibold';
+}
+
+h3{
+	font-family: 'ralewayregular';
+}
+
+h4{
+	font-family: 'ralewaymedium';
+}
+
+h5{
+	font-family: 'ralewayextrabold';
+}
+ /*font-family: 'montserratlight';
+ font-family: 'ralewaysemibold';
+ font-family: 'ralewayregular';
+ font-family: 'ralewaymedium';
+ font-family: 'ralewayextrabold';*/
+
+ul.list1 {
+	list-style-type: circle;
+}
+
+ul.list2 {
+	list-style-type: armenian;
+}
