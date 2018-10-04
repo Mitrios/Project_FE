@@ -7,7 +7,7 @@
 	border: dashed #8EEFFF 1px;
 	background: url(../image/logo.png) no-repeat, url(../image/KON_5881.jpg) no-repeat, url(../image/KON_5749.jpg) no-repeat, url(../image/IMG_20181003_180506.jpg) no-repeat;
 	background-origin: border-box;
-	background-position: left top, center top, bottom left, right bottom;
+	background-position: 0px 0px, 500px 0px, 100px 470px, 1000px 470px;
 	padding-left: 100px;
 	background-size: auto, 40%, 40%, 25%;
 	background-color: #CCCCCC;
