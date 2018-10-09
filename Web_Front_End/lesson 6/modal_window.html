@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Modal window</title>
+	<link href="style_modal_window.css" rel="stylesheet" />
+	<link href="../Project1/fonts/stylesheet.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="main_div">
+		<div class="modal_window">
+			<button class="close_button" id="close_button"></button> <!--не совсем с кнопкой закрытия получилось-->
+			<h2>Ask the question</h2>
+			<span class="formspan"></span>
+			<form id="form" class="form" name="form" action="#" method="post">
+			<fieldset>
+				<div><input type="text" id="full name" name="full name" placeholder="Your full name" required /></div><br/>
+				<div><input type="email" id="email" name="email" placeholder="Your e-mail" required /></div><br/>
+				<div><input type="Phone" id="phone" name="phone" placeholder="Your phone number" required /></div><br/>
+				<div><input type="textarea" id="message" name="message" placeholder="Your question" rows="10" cols="50" /></div><br/>
+				<hr>
+				<div><button class="button" id="button" onclick="alert('We received your message and contact you as soon as possible')">Send</button></div>
+			</fieldset>
+			</form>
+		</div>
+	
+	</div>
+</body>
+</html>
