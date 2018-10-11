@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Blocks</title>
+</head>
+<style>
+	.block{
+		width: 50px;
+		height: 50px;
+		background: rgba(183,153,154,1.00);
+		display: block;
+		margin-bottom: 10px;
+	}
+	
+	.block-inline{
+		width: 50px;
+		height: 50px;
+		background: rgba(183,153,154,1.00);
+		display: inline-block;
+		margin-right: 10px;
+	}
+	
+	.inline{
+		width: 50px;
+		height: 50px;
+		background: rgba(183,153,154,1.00);
+		display: inline;
+		margin-right: 10px;
+	}
+	.parent{
+		width: 600px;
+		margin: 0 auto;
+	}
+	
+	
+	.parent-div{
+		position: relative;
+		width: 1000px;
+		z-index: 1;
+		margin: 0 auto;
+		margin-top: 100px;
+	}
+	.simple-block{
+		float:left;
+		width: 200px;
+		height: 300px;
+		position: absolute;
+		z-index: 2;
+		background: rgba(119,191,127,1.00);
+		margin-left: 0px;
+		margin-top: 100px;
+	}
+	.text-block{
+		width: 200px;
+		height: 300px;
+		position: absolute;
+		z-index: 3;
+		background: rgba(39,144,100,1.00);
+		margin-left: 100px;
+		margin-top: 200px;
+	}
+	.text_picture{
+		width: 200px;
+		height: 300px;
+		position: absolute;
+		z-index: 4;
+		background: rgba(215,137,138,1.00);
+		margin-left: 150px;
+		margin-top: 300px;
+	}
+	.float-parent{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.float{
+		float: left;
+	}
+	.clear{
+		clear:both;
+	}
+	</style>
+	<!--display: none; visibility: hidden-->
+<body>
+	<div class="parent-block">
+	<span class="block"></span>
+	<span class="block"></span>
+	<span class="block"></span>
+	<span class="block"></span>
+		</div>
+	
+	<div class="parent-block-inline">
+	<span class="block-inline">text</span>
+	<span class="block-inline">text</span>
+	<span class="block-inline">text</span>
+		</div>
+	
+	<div class="parent-inline">
+	<span class="inline">text</span>
+	<span class="inline">text</span>
+	<span class="inline">text</span>
+		</div>
+	
+	<div class="parent">
+		<img class="img float" src="../image/logo.png" alt="logo" />
+		<div class="text float">ЛогоЛогоЛОгоЛогоЛОгоЛогоЛОгоЛогоЛОго</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div class="parent-div">
+		<div class="simple-block"></div>
+		<div class="text-block">Text Text Text Text Text Text Text Text Text Text Text Text</div>
+		<div class="text_picture"><img class="img" src="../image/logo.png" alt="logo" />
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<div class="float-parent">
+		<img class="float" src="../image/logo.png" alt="logo" />
+		<div class="float">ЛогоЛогоЛОгоЛогоЛОгоЛогоЛОгоЛогоЛОго</div>
+		<img class="float" src="../image/logo.png" alt="logo" />
+		<div class="float">ЛогоЛогоЛОгоЛогоЛОгоЛогоЛОгоЛогоЛОго</div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

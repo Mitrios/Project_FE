@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+.parent_block{
+	display: inline-block;
+}
+.block1{
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-shadow: 1px 2px 4px rgba(0, 0, 0, 1.0);
+	width: 200px;
+	height: 200px;
+	text-align: justify;
+	text-overflow: ellipsis;
+	border: 3px double;
+}
+
+.block2{
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-shadow: 1px 2px 4px rgba(0, 0, 0, 1.0);
+	width: 200px;
+	height: 200px;
+	text-align: justify;
+	text-overflow: ellipsis;
+	border: 3px double;
+	margin-left: 20px;
+	box-shadow: 0px 0px 20px 15px #CCC232 inset;
+}
+
+.block3{
+	float: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-shadow: 1px 2px 4px rgba(0, 0, 0, 1.0);
+	width: 200px;
+	height: 200px;
+	text-align: justify;
+	text-overflow: ellipsis;
+	border: 3px double;
+	margin-left: 20px;
+	box-shadow: 0px 0px 20px 15px rgba(184, 13, 240, 0.5) inset;
+}
+
+.block4{
+	float: left;
+	width: 200px;
+	height: 200px;
+	font-size: 24px;
+	text-align: center;
+	border: 3px double;
+	margin-left: 20px;
+}
+
+.linear-gradient{
+	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+	background-image: -webkit-linear-gradient(90deg, #0B2349, #0B3490, #8AA9D6);
+	background-image: -moz-linear-gradient(90deg, #0B2349, #0B3490, #8AA9D6);
+	background-image: -o-linear-gradient(90deg, #0B2349, #0B3490, #8AA9D6);
+	background-image: linear-gradient(90deg, #0B2349, #0B3490, #8AA9D6);
+}
+
+.radial-gradient{
+	-webkit-background-clip: text;
+ 	-webkit-text-fill-color: transparent;
+	background-image: -webkit-radial-gradient(#CCCCCC, #0B2349, #0B3490, #8AA9D6);
+	background-image: -moz-radial-gradient(#CCCCCC, #0B2349, #0B3490, #8AA9D6);
+	background-image: -o-radial-gradient(#CCCCCC, #0B2349, #0B3490, #8AA9D6);
+	background-image: radial-gradient(#CCCCCC, #0B2349, #0B3490, #8AA9D6);
+}
