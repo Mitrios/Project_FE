@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Flex</title>
+    <style>
+      div {
+        margin: 10px;
+      }
+      .container_1 {
+        display: inline-block;
+        width: 700px;
+        border: 1px solid black;
+      }
+      .container_1 > div{
+        height: 300px;
+      }
+      .container_1 .flex div {
+        width: 50px;   
+        height: 50px;     
+        border: 1px solid black;
+        background-color: lightblue;
+      }      
+      .flex {
+        background-color: green;
+        display: flex;
+        border: 1px solid black;
+      }
+      .col {
+        flex-direction: column;
+      }
+      .row {
+        flex-direction: row;
+      }
+      .row_rev {
+        flex-direction: row-reverse;
+      }
+      .col_rev {
+        flex-direction: column-reverse;
+      }
+      .wrap {
+        flex-wrap: wrap;
+      }
+      .nowrap {
+        flex-wrap: nowrap;
+      }
+      .wrap_rev {
+        flex-wrap: wrap-reverse;
+      }
+      .flex_flow {
+        flex-flow: wrap row;        
+      }
+        .flex_flow_col {
+        flex-flow: nowrap column;        
+      }
+      .justify_start {
+        justify-content: flex-start;
+      }
+      .justify_end {
+        justify-content: flex-end;
+      }
+      .justify_center {
+        justify-content: center;
+          width: 300px
+      }
+      .justify_betw {
+        justify-content: space-between;
+      }
+      .justify_aro {
+        justify-content: space-around;
+      }
+      .align_start {
+        align-items: flex-start;
+      }
+      .align_center {
+        align-items: center;
+      }
+      .align_end {
+        align-items: flex-end;
+      }
+      .align_base {
+        align-items: baseline;
+      }
+      .align_stretch {
+        align-items: stretch;
+        height: 300px;
+      }
+      .content_start {
+        align-content: flex-start;
+      }
+      .content_end {
+        align-content: flex-end;
+      }
+      .content_center {
+        align-content: center;
+      }
+      .content_betw {
+        align-content: space-between;
+      }
+      .content_aro {
+        align-content: space-around;
+      }
+      .content_stretch {
+        align-content: stretch;
+      }
+      .self_order_1 {
+          order: 1;
+      }
+        .self_order_2 {
+          order: 2;
+        }
+        .self_order_3 {
+          order: 3;
+        }
+        .self_order_4 {
+          order: 4;
+        }
+        .self_grow_1 {
+            flex-grow: 1;
+        }
+        .self_grow_2 {
+            flex-grow: 22;
+        }
+        .self_grow_3 {
+            flex-grow: 33;
+        }
+        .self_shrink_1 {
+            flex-shrink: 22;
+        }
+        .self_shrink_2 {
+            flex-shrink: 33;
+        }
+        .self_shrink_3 {
+            flex-shrink: 44;
+        }
+        .self_basis {
+            flex-basis: 350px;
+        }
+        .self_align_start {
+            align-self: flex-start;
+        }
+        .self_align_end {
+            align-self: flex-end;
+        }
+        .self_align_center {
+            align-self: center;
+        }
+        .self_align_base {
+            align-self: baseline;
+        }
+        .self_align_stretch {
+            align-self: stretch;
+        }
+        
+        .container_1 .flex {
+            height: 200px;
+        }
+        .container_1 .flex .null {
+            height: auto;
+        }
+        .padd {
+            padding: 
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container_1">
+       <div class="flex flex_flow justify_start content_start align_base">
+             <div class="self_order_1">1</div>
+             <div class="self_order_2">2</div>
+             <div class="self_order_3">3</div>
+             <div class="self_order_4">4</div>
+             <div class="self_order_1">5</div>
+             <div class="self_order_2">6</div>
+             <div class="self_order_3">7</div>
+             <div class="self_order_4">8</div>
+             <div class="self_order_1">9</div>
+             <div class="self_order_2">10</div>
+             <div class="self_order_3">11</div>
+             <div class="self_order_4">12</div>
+       </div>
+       <div class="flex flex_flow justify_start content_end align_stretch">
+             <div class="self_grow_1">1</div>
+             <div class="self_grow_2">2</div>
+             <div class="self_grow_3">3</div>
+             <div class="self_grow_1">4</div>
+             <div class="self_grow_3">5</div>
+             <div class="self_grow_2">6</div>
+             <div class="self_grow_3">7</div>
+             <div class="self_grow_2">8</div>
+             <div class="self_grow_1">9</div>
+             <div class="self_grow_2">10</div>
+             <div class="self_grow_3">11</div>
+             <div class="self_grow_1">12</div>
+       </div>
+       <div class="flex flex_flow justify_betw content_start align_base h2">
+             <div  class="self_shrink_3">1</div>
+             <div  class="self_grow_3">2</div>
+             <div  class="self_shrink_1">3</div>
+             <div  class="self_shrink_1">4</div>
+             <div  class="self_grow_3">5</div>
+             <div  class="self_shrink_3">6</div>
+             <div  class="self_shrink_2">7</div>
+             <div  class="self_shrink_3">8</div>
+             <div  class="self_shrink_1">9</div>           
+             <div class="self_grow_2">10</div>
+             <div class="self_grow_3">11</div>
+             <div class="self_grow_1">12</div>
+       </div>
+       <div class="flex flex_flow justify_start content_aro align_base">
+             <div class="self_align_end">1</div>
+             <div class="self_align_start">2</div>
+             <div class="self_align_center">3</div>
+             <div class="self_align_base padd">4</div>
+             <div class="self_align_stretch null">5</div>
+       </div>
+    </div>
+
+  </body>
+</html>
