@@ -3,56 +3,38 @@
 <head>
 <meta charset="utf-8">
 <title>HTML5</title>
+	<link href="html5style.css" rel="stylesheet" />
 </head>
-<style>
-	*{
-		padding: 0px;
-		margin: 0px;
-	}
-	.header{
-		width: 100%;
-		height: 200px;
-		padding: 20px;
-		background: rgba(239,14,18,1.00);
-	}
-	.logo img{
-		width:12%;
-		margin: 0 auto;
-		position: relative;
-	}
-	.container{
-		margin: 0 auto;
-	}
-	.nav{
-		background: rgba(187,187,187,1.00);
-		padding: 15px;
-	}
-	.nav ul.menu li{
-		float: left;
-		text-decoration: none;
-		list-style: none;
-		padding: 10px 20px;
-	}
-	</style>
+	
 <body>
 	<div class="main">
 		<div class="for_page">
 			<header class="header"><div class="container">
-				<a href="/" class="logo"><img src="../image/logo.png" alt="logo" /></a>
+				<a href="/" class="logo"><img src="image/logo_gradient.png" alt="logo" /></a>
 			</div></header>
 			<nav class="nav">
 				<div class="container">
 					<ul class="menu">
-						<li class="item-menu"><a href="#" class="active a-menu">Home</a></li>
-						<li class="item-menu"><a href="#" class="a-menu">About</a></li>
-						<li class="item-menu"><a href="#" class="a-menu">Cocktails menu</a></li>
-						<li class="item-menu"><a href="#" class="a-menu">Shisha menu</a></li>
+						<div class="fl"><li class="item-menu fl"><a href="#" class="active a-menu">Home</a></li>
+						<li class="item-menu fl"><a href="#" class="a-menu">About</a></li></div>
+						<div class="fr"><li class="item-menu fr"><a href="#" class="a-menu">Cocktails menu</a></li>
+						<li class="item-menu fr"><a href="#" class="a-menu">Shisha menu</a></li></div>
 					</ul>
+					<div class="clear"></div>
 				</div>
 			</nav>
-			<section class="block1">
-							
+			<div class="container">
+				<section class="wrapper-flex">
+				<section class="block1">
+				<h1>About us</h1>
+				<div>text text text text text text text texttext text text text text text text texttext text text text text text text texttext text text text text text text texttext text text text text text text texttext text text text text text text texttext text text text text text text texttext text text text text text text texttext text text text text text text text</div>
 			</section>
+			<sidebar class="sidebar">
+			
+			</sidebar>
+				</section></div>
+			<footer class="footer"><div class="container"></div>
+			</footer>
 		</div>
 	</div>
 </body>
