@@ -1,1 +1,23 @@
 // JavaScript Document
+$(document).ready(function(){
+    // Activate Carousel
+    $("#home_slider").carousel();
+    // Enable Carousel Indicators
+    $(".item1").click(function(){
+        $("#home_slider").carousel(0);
+    });
+    $(".item2").click(function(){
+        $("#home_slider").carousel(1);
+    });
+    $(".item3").click(function(){
+        $("#home_slider").carousel(2);
+    });
+    
+    // Enable Carousel Controls
+    $(".carousel-control-prev").click(function(){
+        $("#home_slider").carousel("prev");
+    });
+    $(".carousel-control-next").click(function(){
+        $("#home_slider").carousel("next");
+    });
+});
