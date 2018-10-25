@@ -7,7 +7,7 @@ h1{
 	font-family: 'ralewaysemibold';
 	}
 #home_slider.owl-carousel .owl-nav .owl-prev{
-	background: url(../images/arrow-left.png) no-repeat;
+	background: url( ../images/carousel_backward_arrow.png) no-repeat;
 	width: 52px;
     height: 90px;
     left: 19px;
@@ -15,12 +15,12 @@ h1{
     position: absolute;
 	}
 #home_slider.owl-carousel .owl-nav .owl-prev:hover{
-	background: url(../images/arrow-left-hover.png) no-repeat;
+	background: url(../images/carousel_backward_arrow.png) no-repeat;
 	left: 26px;
     top: 52%;
 	}
 #home_slider.owl-carousel .owl-nav .owl-next{
-	background: url(../images/arrow-right.png) no-repeat;
+	background: url( ../images/carousel_forward_arrow.png) no-repeat;
 	width: 52px;
     height: 90px;
     right: 19px;
@@ -28,7 +28,7 @@ h1{
     position: absolute;
 	}
 #home_slider.owl-carousel .owl-nav .owl-next:hover{
-	background: url(../images/arrow-right-hover.png) no-repeat;
+	background: url( ../images/carousel_forward_arrow.png) no-repeat;
 	right: 26px;
     top: 52%;
 	}
