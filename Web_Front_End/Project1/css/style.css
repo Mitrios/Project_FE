@@ -6,30 +6,33 @@ h1{
 	text-align:center;
 	font-family: 'ralewaysemibold';
 	}
+.clear{
+	clear: both;
+}
 #home_slider.owl-carousel .owl-nav .owl-prev{
 	background: url( ../images/carousel_backward_arrow.jpg) no-repeat;
-	width: 52px;
+	width: 70px;
     height: 90px;
-    left: 19px;
+    left: 30px;
     top: 50%;
     position: absolute;
 	}
 #home_slider.owl-carousel .owl-nav .owl-prev:hover{
 	background: url( ../images/carousel_backward_arrow.jpg) no-repeat;
-	left: 26px;
+	left: 30px;
     top: 52%;
 	}
 #home_slider.owl-carousel .owl-nav .owl-next{
 	background: url( ../images/carousel_forward_arrow.jpg) no-repeat;
-	width: 52px;
+	width: 70px;
     height: 90px;
-    right: 19px;
+    right: 50px;
     top: 50%;
     position: absolute;
 	}
 #home_slider.owl-carousel .owl-nav .owl-next:hover{
 	background: url( ../images/carousel_forward_arrow.jpg) no-repeat;
-	right: 26px;
+	right: 50px;
     top: 52%;
 	}
 #home_slider{
@@ -143,6 +146,11 @@ h1{
     bottom: 28px;
     left: 50%;
 	}
+.block img{
+	width: 50px;
+	top: 20px;
+	left: 25%;
+}
 /*font-family: 'montserratlight';
 font-family: 'ralewayregular';
 font-family: 'ralewaysemibold';
