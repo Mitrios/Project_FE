@@ -113,7 +113,7 @@ var isWindow = function isWindow( obj ) {
 
 
 function toType( obj ) {
-	if ( obj == null ) {
+	if ( obj === null ) {
 		return obj + "";
 	}
 
@@ -162,7 +162,7 @@ jQuery.fn = jQuery.prototype = {
 	get: function( num ) {
 
 		// Return all the elements in a clean array
-		if ( num == null ) {
+		if ( num === null ) {
 			return slice.call( this );
 		}
 
@@ -254,7 +254,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 	for ( ; i < length; i++ ) {
 
 		// Only deal with non-null/undefined values
-		if ( ( options = arguments[ i ] ) != null ) {
+		if ( ( options = arguments[ i ] ) !== null ) {
 
 			// Extend the base object
 			for ( name in options ) {

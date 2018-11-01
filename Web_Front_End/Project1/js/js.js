@@ -1,23 +1,55 @@
-// JavaScript Document
-$(document).ready(function(){
-    // Activate Carousel
-    $("#home_slider").carousel();
-    // Enable Carousel Indicators
-    $(".item1").click(function(){
-        $("#home_slider").carousel(0);
-    });
-    $(".item2").click(function(){
-        $("#home_slider").carousel(1);
-    });
-    $(".item3").click(function(){
-        $("#home_slider").carousel(2);
-    });
-    
-    // Enable Carousel Controls
-    $(".carousel-control-prev").click(function(){
-        $("#home_slider").carousel("prev");
-    });
-    $(".carousel-control-next").click(function(){
-        $("#home_slider").carousel("next");
-    });
-});
+jQuery.noConflict();
+jQuery(document).ready(function () {
+
+    'use strict';
+	
+	var slid = jQuery('#home_slider');
+		
+	slid.owlCarousel({
+		items: 1,
+		autoplay: true,
+		autoplayTimeout: 5000,
+		autoplayHoverPause: false,
+		smartSpeed: 1000,
+		dotsSpeed: 1000,
+		loop: true,
+		nav: true,
+		navText: ['', ''],
+		dots: true,
+		mouseDrag: true, 
+		margin: 30,
+		stagePadding: 0,
+		autoWidth: false,
+		responsiveClass: true,
+		responsive:{
+			0:{
+				items: 1,
+				dots: true,
+				mouseDrag: true,
+				autoplay: false
+			},
+			479:{
+				items: 1,
+				dots: true,
+				mouseDrag: true,
+				autoplay: false
+			},
+			767:{
+				items: 1,
+				mouseDrag: true,
+				dots: true,
+				autoplay: false
+			},
+			991:{
+				items: 1,
+				mouseDrag: true
+			},
+			1099:{
+				items: 1,
+				mouseDrag: true
+			}
+		}
+	});
+	
+	
+	});
