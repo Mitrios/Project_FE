@@ -499,6 +499,37 @@ h1{
 .ul_block6 li{
 	padding-bottom: 10px;
 }
+
+/* block 7 */
+
+.block7{
+	padding: 40px 0px 34px;
+	background: linear-gradient(to right, #231d1b, #513a2e);
+	width: 100%;
+	height: auto;
+}
+
+.block7 .item_block7{
+	padding: 0px 15px;
+}
+
+.block7 .item_block7 img{
+	width: 35px;
+	height: 30px;
+}
+
+.block7 .counter_value{
+	font-size: 40px;
+	font-family: 'montserratlight';
+	color: white;
+}
+
+.block7 .counter_title h3{
+	font-size: 14px;
+	font-family: 'montserratlight';
+	color: #c7b299;
+}
+
 /* block 9 */
 .block9{
 	padding: 130px 0px;
