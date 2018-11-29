@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>for in</title>
+</head>
+	
+	<script>
+		
+	//	var menu ={
+//			width: 300,
+//			height: 200,
+//			title: "Menu"
+//		};
+//		
+//		for (var key in menu){
+//			alert("Key:" + key + "value:" + menu[key]);	
+//		}
+//		
+//		var menu ={
+//			width: 300,
+//			height: 200,
+//			title: "Menu"
+//		};
+//		
+//		var counter = 0;
+//			for (var key in menu){
+//				counter ++;
+//			}
+//		alert("Total features:" + counter);
+//		
+//		
+//		var user ={
+//			name: "Vasiliy",
+//			surname: "Petrov"
+//		}
+//		user.age = 26;
+//		for (var prop in user){
+//			alert(prop);
+//			}
+		
+		var salaries = {
+			'Vasia': 100,
+			'Vova': 300,
+			'Sasha': 250
+		}
+		var sum = 0;
+		for (var key in salaries){
+			sum += salaries[key];
+		}
+		alert ('Total summ:' + sum)
+		
+	</script>
+
+<body>
+</body>
+</html>

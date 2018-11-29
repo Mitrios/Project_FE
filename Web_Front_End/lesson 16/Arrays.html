@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Associative Arrays</title>
+</head>
+
+	<script>
+	
+//	//	o = new Object(); //1
+////		o = {}; //2
+////		
+//		var person = {}; // 
+//		
+//		// object.feature
+//		
+//		person.name = 'Nickolas';
+//		person.age = 26;
+//		alert(person.name + ':' + person.age);
+//		delete person.age;
+//		
+//		if('name' in person){
+//			alert('Name feature exists!');
+//		}
+//		
+//		var person = {};
+//		alert (person.lalala);
+//		
+//		var person = {
+//			name: 'Nickolas'
+//		};
+//		
+//		alert(person.lalala === undefined); // true the feature is not found
+//		alert (person.name === undefined); //fasle, the feature exists
+//		
+//		var obj = {};
+//		obj.test = undefined;
+//		alert(obj.test === undefined); //true
+//		alert(obj.blabla === undefined); //true
+//		
+//		var obj = {};
+//		obj.test = undefined;
+//		
+//		alert("test" in obj); //true
+//		alert("blabla" in obj); //false
+//		
+//		//object ['feature']
+//		
+//		var person = {};
+//		person['name'] = 'Vassa';
+//		
+//		var person = {};
+//		person ['Favourite music'] = 'Jazz';
+//		
+		
+	//	var user ={};
+//		user.name = 'Vasiliy';
+//		user.surname = 'Petrov';
+//		alert (user.name + ' ' + user.surname);
+//		user.name = 'Sergey';
+//		alert (user.name + ' ' + user.surname);
+//		delete user.name;
+//		alert(user.name === undefined);
+
+		
+		var user = {
+			name: 'Vasiliy',
+			surname: 'Petrov',
+		}
+		alert (user.name + ' ' + user.surname);
+		user['name'] = 'Sergey';
+		alert (user.name + ' ' + user.surname);
+		delete user.name;
+		alert(user.name === undefined);
+	</script>
+	
+<body>
+</body>
+</html>
