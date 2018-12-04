@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>anonymous functions</title>
+</head>
+
+	<script>
+		//function Say(){
+//			alert('Hello');
+//		}
+//		alert(Say);
+		
+	//	function Say2(){
+//			alert('Hello');
+//		}
+//		
+//		var func = Say2;
+//		func();
+//		
+//		Say2 = null;
+//		Say2();
+		
+		// anonymous functions
+		
+	//	function ask(question, yes, no){
+//			if(confirm(question)) yes()
+//			else no();
+//		}
+//		function showOk(){
+//			alert('You agreed');
+//		}
+//		
+//		function showCancel(){
+//			alert('Cancelled');
+//		}
+//		ask('Do you agree?', showOk, showCancel);
+//		
+		function ask(question, yes, no){
+			if(confirm(question)) yes()
+			else no();
+		}
+		ask('Do you argee?',
+		function (){
+			alert('You agreed');
+		},
+		
+		function (){
+			alert('Cancelled');
+		})
+		
+	//	var sum = new function ('a,b', 'return a+b');
+//		var result = sum (1,2);
+//		alert(result);
+		
+	</script>
+	
+<body>
+</body>
+</html>

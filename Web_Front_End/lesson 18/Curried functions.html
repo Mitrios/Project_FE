@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Curried functions</title>
+</head>
+
+	<script>
+	//	function Say(name){
+//			var phrase = "Hello" + name;
+//			alert(phrase);
+//		}
+//		Say('Vasiliy');
+//		
+		var userName = 'Vasia'
+		
+		function Say(){
+			alert(userName);
+		}
+		Say();
+		
+		var ph = 'Hello';
+		function say2(name){
+			alert(ph + ', ' +  name);
+		}
+		say2('Vasia');
+		ph = 'Bye';
+		say2('Vasia')
+	</script>
+	
+<body>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lesson 18 JS_HW</title>
+</head>
+
+	
+	<script>
+
+
+function Person(first, last, age, eye, height) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+    this.height = height;
+    this.nationality = 'Ukrainian';
+}
+
+var myFather = new Person('Oleh', 'Mastiuk', 49, 'blue', 177);
+var myMother = new Person('Olena', 'Mastiuk', 47, 'brown', 160);
+var mySister = new Person('Kateryna', 'Grabaliuk', 23, 'brown', 163);
+
+ myFather.name = function() {
+    return this.firstName + " " + this.lastName;
+};
+
+console.log("My father's name is " + myFather.name());
+
+
+// Homework log(a)
+function log(a){
+    alert("a=" + a);
+}
+
+function log(a,b,c){
+    alert("a=" + a+ ", b=" + b+ ", c=" +c);
+}
+
+log(15);
+log(1,2,3);
+
+// Homework sum()
+function sumAll(){
+    var sum = 0;
+    for (var i=0; i<arguments.length; i++){
+       sum += arguments[i];
+    }
+    return sum;
+}
+alert(sumAll());
+alert(sumAll(1));
+alert(sumAll(1,2));
+alert(sumAll(1,2,3));
+alert(sumAll(1,2,3,4));
+
+	</script>
+	
+<body>
+</body>
+</html>

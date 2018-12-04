@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Callback</title>
+</head>
+
+	<script>
+		var menu = new Menu ({
+			title: 'Sweets',
+			template: _template(document.getElementById('menu-template').innerHTML),
+			listTemplate: _template(document.getElementById('menu-list-template').innerHTML)
+			items: {
+			'donut': "Donut",
+			'cake': "Cake",
+			'chocolate': "Chocolate"
+		},
+			onselect: showSelected
+		});
+		
+		function showSelected(href){
+			alert(href);
+		}
+		
+		function Menu (options){
+			function select(link){
+				var widgetEvent = new CustomEvent('select', {
+					bubbles: true,
+					detail: link.getAttribute('href').slice(1)
+				});
+				elem.disEvent(widgetEvent);
+			}
+		}
+	</script>
+	
+<body>
+</body>
+</html>
