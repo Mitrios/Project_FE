@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Lesson 19. The callee method</title>
+    <script>
+        
+        // // Callee method
+        // var user ={
+        //     name: "Sonya"
+        //     //method
+        //     fan:function ( ){
+        //         alert('Hello')
+        //     }
+        // }
+        // user.fan();
+
+        // var user ={
+        //     name: 'Sonya',
+
+        //     //method
+        //     fan: function(){
+        //         showName(this);
+        //     }
+        // }
+        // function showName(namedObj){
+        //     alert(namedObj.name)
+        // }
+
+        // user.fan();
+
+        var person ={
+            firstName: "Jack",
+            lastName: "Daniels",
+            age: 45,
+        }
+
+        person.name = function(){
+            return this.firstName + ' ' + this.lastName;
+        };
+
+        function foo(){
+            alert("Person's name: " + person.name() + ". Person's age: " + this.age);
+        }
+
+        person.f = foo;
+
+        person.f();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

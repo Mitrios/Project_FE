@@ -1,0 +1,66 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+
+    <script>
+        function Person(first, last, age, eye, height) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+        this.height = height;
+        this.nationality = 'Ukrainian';
+    }
+
+        var myFather = new Person('Oleh', 'Mastiuk', 49, 'blue', 177);
+        var myMother = new Person('Olena', 'Mastiuk', 47, 'brown', 160);
+        var mySister = new Person('Kateryna', 'Grabaliuk', 23, 'brown', 163);
+
+        myFather.name = function() {
+            return this.firstName + " " + this.lastName;
+        };
+
+        console.log("My father's name is " + myFather.name());
+
+
+         var person ={
+            firstName: "Jack",
+            lastName: "Daniels",
+            age: 45,
+        }
+
+        person.name = function(){
+            return this.firstName + ' ' + this.lastName;
+        };
+
+        function foo(){
+            alert("Person's name: " + person.name() + ". Person's age: " + this.age);
+        }
+
+        person.f = foo;
+
+        person.f();
+
+// The call() method takes arguments separately. The apply() method takes arguments as an array.
+
+        var person1 ={
+            firstName: "Samuel",
+            lastName: "Jackson",
+            age: 43,
+        }
+        
+        function foo1(){
+        alert("Person's one name: " + person.name.call(person1));
+        }
+
+        person1.f = foo1;
+        person1.f();
+    </script>
+
+<body>
+    
+</body>
+</html>
