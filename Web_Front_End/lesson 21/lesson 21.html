@@ -1,0 +1,47 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+</head>
+
+    <script>
+  /* try{
+      code
+  }catch(err){
+      error fix
+  } */
+
+  try{
+      alert("Beginning of try block");
+      // code without error
+      alert("Ending of try block");
+  } catch(e){
+      alert("No error");
+  }
+  alert("No error in the code");
+
+    try{
+      setTimeout(function(){
+          throw new Error();
+      },1000);
+     }catch(e){
+      alert("alert cannot be executed");
+    }
+
+    var data = "Has error";
+
+    try{
+        var user = JSON.parse(data);
+        alert(user.name);
+    }catch(e){
+        alert("We are sorry, the data has not been received");
+        alert(e.name);
+        alert(e.message)
+    }
+    </script>
+
+<body>
+    
+</body>
+</html>

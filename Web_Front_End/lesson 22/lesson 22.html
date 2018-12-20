@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Window</title>
+</head>
+
+    <script>
+/*var myWindow = window.open('', '', 'width = 250, height = 250');
+myWindow.document.write("<p>Text</p>");
+
+var win = window.open(url,name,param);*/
+
+/* param:
+left/top - spaning of the window
+width/height - dimention parameters
+*/
+
+// Window features !!!!
+
+/* menubar (yes/no) - show or hide the browser menu
+toolbar (yes/no) - navigation panel
+location (yes/no) - Show/Hide url in a new window
+resizable(yes/no) - *no by default* disable window resizing
+scrollbars(yes/no) - *no by default* disable the scrolling option for a new window
+onresize - changes the size of the window when event occures
+onscroll - events when scrolling
+onload - loading of a page with all resources
+onfocus/onblur - focusing/bluring
+*/
+
+/*var newWin = window.open('about:blank','hello', 'width=200,height=200');
+newWin.document.write('Hello There!');
+
+var newWin = window.open('/','example', 'width=200,height=200');
+alert(newWin.location.href);
+newWin.oload = function (){
+    var div = newWin.document.createElement('div'),
+    body = newWin.document.body;
+
+    div.innerHTML = 'Welcome!'
+    div.style.font = '30px'
+
+    body.insertBefore(div, body, firstChild);
+}
+newWin.document.write('Hello There!');*/
+
+// Window Methods
+
+/* window.closed () - property that equals "true"
+window.close () - method that close modal window 
+win.moveBy(x,y) - moves window by x to the right and by y down
+win.moveTo(x,y)
+win.resizeBy(width,height) - resizes the window
+win.resizeTo(w,h)
+win.scrollBy(x,y)
+win.scrollTo(x,y)
+elem.scrollIntoView(top)*/
+
+function srolldown(){
+    scrollBy(0,100);
+}
+function scrollup(){
+    srollBy(0,-100);
+}
+
+var win;
+
+function openwin(){
+    win = window.open('','','width=300,height=300');
+    win.document.write('I am the new window');
+}
+
+function movewin(){
+    win.moveBy(200, 100);
+    win.focus();
+}
+    </script>
+
+<body>
+    <input id="but1" type="button" value="scroll up" onclick="scrollup()" />
+    <input id="but2" type="button" value="scroll down" onclick="scrolldown()" />
+    <input id="but3" type="button" value="open win" onclick="openwin()" />
+    <input id="but4" type="button" value="Move the window" onclick="movewin()" />
+
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p><p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p><p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p><p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p><p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+<p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+
+</body>
+</html>
