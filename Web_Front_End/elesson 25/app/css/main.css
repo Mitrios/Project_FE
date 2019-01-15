@@ -1,0 +1,33 @@
+/* LESS Document */
+body {
+  background: #cccccc;
+}
+.header {
+  height: 300px;
+  background: #CCC;
+}
+.aside {
+  width: 50%;
+  background: #CCC;
+  float: left;
+}
+.sidebar {
+  width: 50%;
+  border-bottom: 1px solid #CCC;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  border-top: dotted 1px #000;
+  border-bottom: solid 1px #CCC;
+}
+.border {
+  border-top: dotted 1px #000;
+  border-bottom: solid 1px #CCC;
+}
+h1 {
+  padding: 5px;
+}
+h1.content {
+  padding: 10px;
+}

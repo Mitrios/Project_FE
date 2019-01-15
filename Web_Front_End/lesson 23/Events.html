@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Events</title>
+</head>
+
+<body>
+    <input value="Click here" onclick="alert('Click')" type="button" /><br>
+    <input value="Count rabbits" onclick="countRabbits()" type="button" /><br>
+    <input id="elem" value="Click" type="button" /><br>
+    <input id="elem2" value="Click" type="button" /><br>
+
+    <h2>onchange</h2>
+    <input type="text" onChange="alert(this.value)" /><br>
+    <input type="button" value="Button" />
+    <script>
+        function countRabbits(){
+            for(var i=1; i<3; i++){
+                alert("Number of the rabbit " + i);
+            }
+        }
+
+        elem.onclick = function(){
+            alert('Thank you');
+        }
+   
+
+    // // <!-- Event Listener -->
+
+    // element.addEventListener(event, handler, [phase]);
+    // element.removeEventListener(event, handler, [phase]);
+
+    // element.addEventListener("click", function () {alert('Thank you')})
+    // element.removeEventListener("click", function () {alert('Thank you')})
+
+    //     function handler(){
+    //         alert('Thank you');
+    //     }
+
+    // element.addEventListener("click", handler)
+    // element.removeEventListener("click", handler)
+
+
+    function handler1(){
+        alert('Thank you');
+    }
+    function handler2(){
+        alert('Thank you once again');
+    }
+    elem2.onclick = function(){alert("Hello");}
+    elem2.addEventListener("click", handler1);
+    elem2.removeEventListener("click", handler2);
+
+    // onchange
+    // onKeyPress
+
+    // stopPropagation() event
+
+    // delegated events
+
+    //event target
+
+    //onsubmit
+
+    //event.preventDefault
+    
+    </script>
+</body>
+</html>
