@@ -5,52 +5,141 @@
     <title>Gulp</title>
     <link href="less/main.less" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="less/libs.less" rel="stylesheet">
+    <link href="css/libs.css" rel="stylesheet">
+    <link href="css/libs.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/bootstrap-grid.css" rel="stylesheet" />
+	<link href="css/owl.carousel.css" rel="stylesheet" />
+	<link href="css/owl.carousel.min.css" rel="stylesheet" />
+	<link href="css/owl.theme.default.css" rel="stylesheet" />
+    
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script type= "text/javascript" src="js/owl.carousel.js"></script>
+	<script type= "text/javascript" src="js/owl.carousel.min.js"></script>
+    <script src="js/common.js"></script>
 </head>
 
 <body>
-    <header class="header">
-
+    <main class="main" id="main">
+        <header class="header">
+            <a href="/" class="logo"><img src="images/logo.png" alt="logo" /></a>
+             
+    <ul class="menu">
+        <div class="fl">
+            <li class="item-menu fl"><a href="#" class="active a-menu">Home</a></li>
+            <li class="item-menu fl"><a href="#" class="a-menu">About</a></li>
+            <li class="item-menu fl"><a href="#" class="a-menu">Cocktails menu</a></li>
+        </div>
+        <div class="fr">
+            <li class="item-menu fr"><a href="#" class="a-menu">Shisha menu</a></li>
+            <li class="item-menu fr"><a href="#" class="a-menu">Gallery</a></li>
+            <li class="item-menu fr"><a href="#" class="a-menu">Contacts</a></li>
+        </div>
+    </ul>
+    <div class="clear"></div>
     </header>
 
-    <nav>
-        <div class="vertical-menu sidebar">
-            <ul>
-                    <li><a href="#" class="active">Home Page</a></li>
-                    <li><a href="#">Page2</a></li>
-                    <li><a href="#">Page3</a></li>
-                    <li><a href="#">Page4</a></li>
-                    <li><a href="#">Page5</a></li>
-            </ul>
+    <section class="slider" id="slider">
+    <div class="owl-carousel owl-loaded owl-drag" id="home_slider">
+        <div class="item"><img src="images/slider1.jpg" alt="slider1" /></div>
+        <div class="item"><img src="images/slider2.jpg" alt="slider2" /></div>
+        <div class="item"><img src="images/slider3_1.jpg" alt="slider3" /></div>
+    </div>
+    
+            </section>
+
+            <section class="block1" id="block1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="item_block">
+                                <img src="images/shisha.png" alt="Shisha" />
+                                <div class="clear"></div>
+                                <div><h3>Shisha</h3>
+                                <p>Explore our shiha masterpiece</p></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="item_block">
+                                <img src="images/cocktails.jpg" alt="Cocktails" />
+                                <div><h3>Cocktails</h3>
+                                <p>Enjoy our delecious cocktails</p></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="item_block">
+                                <img src="images/events.png" alt="events" />
+                                <div><h3>Events</h3>
+                                <p>Join our events tonight</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+
+            <section class="block2" id="block2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 item_block2">
+                                
+                                    <video class="HP_video" id="homeVideo" autoplay loop>
+                                        <source src="images/hookah.mp4" type="video/mp4">
+                                    </video>
+                                    <!-- <img src="images/play_icon.png" alt="Play Icon" />
+                                    <div><h3>Waxom Video Presentation</h3>
+                                    <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p></div> -->
+                                
+                            </div>
+                        </div>
+                    </div>
+            
+                </section>
+
+            <section class="block3">
+                <div class="container">
+                    <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 contacts">
+                    <div><h3>Contacts</h3>
+                        <p>Reservations: +420 774 348 077</p>
+                        <p>hookahplacepraha@gmail.com</p>
+                        <p>Address: Anenská 197/1, Praha</p>
+                    </div>
+                    <div class="social_links">
+                        <img src="images/FB.png" alt="Facebook" class="social_links_fb"><a href="https://www.facebook.com/hookahplaceprague/" target="_blank" class="social_links_link"></a>
+                        <img src="images/instagram.png" alt="Facebook" class="social_links_inst"><a href="https://www.instagram.com/hookahplaceprague" target="_blank" class="social_links_link"></a>
+                        <img src="images/VK.png" alt="Facebook" class="social_links_vk"><a href="https://vk.com/hookahplace_prague" target="_blank" class="social_links_link"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 open_hours">
+                    <div><h3>Open hours</h3>
+                        <p>Sunday 16:00 - 02:00</p>
+                        <p>Monday 16:00 - 02:00</p>
+                        <p>Tuesday 16:00 - 02:00</p>
+                        <p>Wednesday 16:00 - 02:00</p>
+                        <p>Thursday 16:00 - 02:00</p>
+                        <p>Friday 16:00 - 02:00</p>
+                        <p>Saturday 16:00 - 02:00</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 map" id="google_location">
+                        <div><h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/place/HookahPlacePrague/@50.0853733,14.4121188,17z/data=!3m1!4b1!4m5!3m4!1s0x470b94e5897ae65d:0xf0355284db235dcb!8m2!3d50.0853733!4d14.4143075" target="_parent">
+                    </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-
-    <aside class="aside">
-
-    </aside>
-
-    <section class="content">
-            <h1>
-        
-                </h1>
-        <div class="border">
-
-        </div>
-
-        <article class="article1">
-            <h2>
-
-            </h2>
-        </article>
-    </section>
-
-    <section class="content1">
-        <article class="article2">
-
-        </article>
-    </section>
+            </section>
+              
     
     <footer class="footer">
-
+       
     </footer>
+    </main>
 </body>
 </html>

@@ -39,7 +39,7 @@
 		padding: 0px;
 		margin-bottom: 20px;
 	}
-	.nav ul.menu li{
+	.header ul.menu li{
 		float: left;
 		text-decoration: none;
 		list-style: none;
@@ -48,17 +48,17 @@
 		border-left: 3px thick red;
 		border-right: 3px thick red;
 	}
-.nav ul.menu li a{
+.header ul.menu li a{
 		color: black;
 		text-transform: uppercase;
 		text-decoration: none;
 	 }
-	.nav ul.menu li:hover{
+	.header ul.menu li:hover{
 		background: rgba(255,102,104,1.00);
 		color: rgba(176,176,176,1.00);
 		padding: 10px 20px;
 	}
-.nav ul.menu li:active{
+.header ul.menu li:active{
 		background: rgba(255,102,104,1.00);
 		color: rgba(176,176,176,1.00);
 		padding: 10px 20px;
