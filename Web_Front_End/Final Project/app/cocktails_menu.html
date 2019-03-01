@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Cocktails Menu</title>
+    <link href="less/main.less" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="less/libs.less" rel="stylesheet">
+    <link href="css/libs.css" rel="stylesheet">
+    <link href="css/libs.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+	<link href="css/bootstrap-grid.css" rel="stylesheet" />
+    
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="http://weinre.dev.gvia.group/target/target-script-min.js#dima"></script>
+</head>
+
+<body>
+    <main class="main" id="main">
+        <header class="header">
+            <a href="/" class="logo"><img src="images/logo.png" alt="logo" /></a>
+             
+    <ul class="menu">
+        <div class="fl">
+            <li class="item-menu fl"><a href="index.html" class="active a-menu">Home</a></li>
+            <li class="item-menu fl"><a href="#" class="a-menu">About</a></li>
+            <li class="item-menu fl"><a href="#" class="a-menu">Cocktails menu</a></li>
+        </div>
+        <div class="fr">
+            <li class="item-menu fr"><a href="#openModal" class="a-menu trigger">Contact Us</a>
+                <div id="openModal" class="modalDialog">
+                    <div>
+                    <div class="modal_heading">
+                        <a href="#close" title="Close" class="close">x</a>
+                        <h2>Contact form</h2>
+                    </div>
+                    <div>
+                            <span class="formspan"></span>
+                            <form id="form" class="form" name="form" action="#" method="post">
+                        
+                            <fieldset>
+                                <div><input type="text" id="full name" name="full name" placeholder="Your full name" required /></div><br/>
+                                <div><input type="email" id="email" name="email" placeholder="Your e-mail" required /></div><br/>
+                                <div><input type="Phone" id="phone" name="phone" placeholder="Your phone number" required /></div><br/>
+                                <div><input type="textarea" id="message" name="message" placeholder="Your question" rows="10" cols="50" /></div><br/>
+                                <hr>
+                                <div><button class="button" id="button" onclick="alert('We received your message and contact you as soon as possible')">Send</button></div>
+                            </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="item-menu fr"><a href="#" class="a-menu">Gallery</a></li>
+            <li class="item-menu fr"><a href="#" class="a-menu">Shisha menu</a></li>
+        </div>
+    </ul>
+    <div class="clear"></div>
+    </header>
+
+
+    <section class="block4" id="block4">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 item_block4">
+					
+							<h3>Our Cocktails</h3>
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4">
+						<div class="project_block4">
+							<div class="block4_img"><img src="images/cuba-libre.jpg" alt="cuba-libre"></div>
+							<div class="heading_project_block4">
+								<h5>Cuba Libre</h5>
+								<p>White Rum, Fresh Lime, Coca-Cola</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4">
+						<div class="project_block4">
+							<div class="block4_img"><img src="images/white-russian.png" alt="#"></div>
+							<div class="heading_project_block4">
+								<h5>White Russian</h5>
+								<p>Vodka, Coffee Liqeur, Heavy Cream, Coffee Beans</p>
+							</div>	
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4">
+						<div class="project_block4">
+							<div class="block4_img"><img src="images/caipiroska.jpg" alt="#"></div>
+							<div class="heading_project_block4">
+								<h5>Caipiroska</h5>
+								<p>Cane Sugar, Fresh Lime, Vodka</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4">
+						<div class="project_block4">
+							<div class="block4_img"><img src="images/moscow-mule.jpg" alt="#"></div>
+							<div class="heading_project_block4">
+								<h5>Moscow Mule</h5>
+								<p>Cane Sugar, Fresh Lime, Ginger Beer, Vodka</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4">
+						<div class="project_block4">
+							<div class="block4_img"><img src="images/negroni.jpg" alt="#"></div>
+							<div class="heading_project_block4">
+								<h5>Negroni</h5>
+								<p>Gin, Campari, Vermout, Orange peel</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4">
+						<div class="project_block4">
+							<div class="block4_img"><img src="images/cosmopolitan.jpg" alt="#"></div>
+							<div class="heading_project_block4">
+								<h5>Cosmopolitan</h5>
+								<p>Vodka, Cointreau, Lime Juice, Cranberry Juice</p>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                            <div class="project_block4">
+                                <div class="block4_img"><img src="images/espresso-martini.jpg" alt="#"></div>
+                                <div class="heading_project_block4">
+                                    <h5>Espresso Martini</h5>
+                                    <p>Vodka, Coffee Liqeur, Espresso, Chocolate Bitter</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                            <div class="project_block4">
+                                <div class="block4_img"><img src="images/old-fashioned.jpg" alt="#"></div>
+                                <div class="heading_project_block4">
+                                    <h5>Old Fashioned</h5>
+                                    <p>Whisky, Cane Sugar, Angostura, Fresh Orange Juice</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                            <div class="project_block4">
+                                <div class="block4_img"><img src="images/tequila-sunrise.jpg" alt="#"></div>
+                                <div class="heading_project_block4">
+                                    <h5>Tequila Sunrise</h5>
+                                    <p>Tequila, Orange Juice, Grenadine</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                                <div class="project_block4">
+                                    <div class="block4_img"><img src="images/espresso-martini.jpg" alt="#"></div>
+                                    <div class="heading_project_block4">
+                                        <h5>Espresso Martini</h5>
+                                        <p>Vodka, Coffee Liqeur, Espresso, Chocolate Bitter</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                                <div class="project_block4">
+                                    <div class="block4_img"><img src="images/old-fashioned.jpg" alt="#"></div>
+                                    <div class="heading_project_block4">
+                                        <h5>Old Fashioned</h5>
+                                        <p>Whisky, Cane Sugar, Angostura, Fresh Orange Juice</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                                <div class="project_block4">
+                                    <div class="block4_img"><img src="images/tequila-sunrise.jpg" alt="#"></div>
+                                    <div class="heading_project_block4">
+                                        <h5>Tequila Sunrise</h5>
+                                        <p>Tequila, Orange Juice, Grenadine</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                                    <div class="project_block4">
+                                        <div class="block4_img"><img src="images/espresso-martini.jpg" alt="#"></div>
+                                        <div class="heading_project_block4">
+                                            <h5>Espresso Martini</h5>
+                                            <p>Vodka, Coffee Liqeur, Espresso, Chocolate Bitter</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                                    <div class="project_block4">
+                                        <div class="block4_img"><img src="images/old-fashioned.jpg" alt="#"></div>
+                                        <div class="heading_project_block4">
+                                            <h5>Old Fashioned</h5>
+                                            <p>Whisky, Cane Sugar, Angostura, Fresh Orange Juice</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                                    <div class="project_block4">
+                                        <div class="block4_img"><img src="images/tequila-sunrise.jpg" alt="#"></div>
+                                        <div class="heading_project_block4">
+                                            <h5>Tequila Sunrise</h5>
+                                            <p>Tequila, Orange Juice, Grenadine</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                                        <div class="project_block4">
+                                            <div class="block4_img"><img src="images/espresso-martini.jpg" alt="#"></div>
+                                            <div class="heading_project_block4">
+                                                <h5>Espresso Martini</h5>
+                                                <p>Vodka, Coffee Liqeur, Espresso, Chocolate Bitter</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                                        <div class="project_block4">
+                                            <div class="block4_img"><img src="images/old-fashioned.jpg" alt="#"></div>
+                                            <div class="heading_project_block4">
+                                                <h5>Old Fashioned</h5>
+                                                <p>Whisky, Cane Sugar, Angostura, Fresh Orange Juice</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-8 col-sm-12 item_block4 blogBox moreBox" style="display: none;">
+                                        <div class="project_block4">
+                                            <div class="block4_img"><img src="images/tequila-sunrise.jpg" alt="#"></div>
+                                            <div class="heading_project_block4">
+                                                <h5>Tequila Sunrise</h5>
+                                                <p>Tequila, Orange Juice, Grenadine</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+				<a href="#" class="button_projects" id="ShowMore">Show More</a>
+				</div>
+		</section>
+
+    
+    <footer class="footer">
+       
+    </footer>
+    </main>
+</body>
+</html>
